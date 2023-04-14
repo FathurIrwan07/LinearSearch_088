@@ -31,4 +31,30 @@ void LinearSearch() {
     char ch;
     int comparisons; //number of comparisons
 
-   
+    do
+    {
+        //accept the number to be searched
+        cout << "\nEnter the element you want to search : "; // lamgkah 1
+        int item;
+        cin >> item;
+
+        comparisons = 0;
+        for (i = 0; i < n; i++) //langkah 2, 3 dan 4
+        {
+            comparisons++;
+            if (arr[i] == item) //langkah 5A fount
+            {
+                cout << "\n" << item << " found at position " << (i + 1) << endl;
+                break;
+            }
+        }
+
+        if (i == n) // langkah 5B not found
+            cout << "\n" << item << " not found in the array\n";
+        cout << "\nNumber of comparisons: " << comparisons << endl;
+
+        cout << "\nContinue search (y/n): ";
+        cin >> ch;
+    } while ((ch == 'y') || (ch == 'y'));
+}
+
