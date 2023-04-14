@@ -15,4 +15,8 @@ void input() {
             cout << "\nArray hhould have minimum 1 and maximum 20 element.\n\n ";
     }
 
-   
+    //accept array elements
+    cout << "\n====================\n";
+    cout << "Enter Array element\n";
+    cout << "\n====================\n";
+    
