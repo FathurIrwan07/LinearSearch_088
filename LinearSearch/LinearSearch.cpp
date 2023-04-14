@@ -6,4 +6,13 @@ int n; //number of elements in the array
 int i; //index of array elments
 
 void input() {
+    while (true) {
+        cout << "Enter the Number of element in the Array : ";
+        cin >> n;
+        if ((n > 0) && (n <= 20))
+            break;
+        else
+            cout << "\nArray hhould have minimum 1 and maximum 20 element.\n\n ";
+    }
+
    
